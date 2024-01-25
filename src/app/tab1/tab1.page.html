@@ -1,17 +1,39 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 1
+      Connexion
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
+
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
+      <ion-title size="large">Connexion</ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <div class="logo">
+    <ion-icon name="logo-alipay"></ion-icon>
+  </div>
+
+  <ion-item color="clear">
+    <ion-label color="secondary">Email</ion-label>
+    <ion-input aria-label="Email" color="secondary" type="email" placeholder="Adresse email"></ion-input>
+  </ion-item>
+  
+  <ion-item color="clear">
+    <ion-label color="secondary">Password</ion-label>
+    <ion-input aria-label="Password" color="secondary" type="password" placeholder="Mot de Passe"></ion-input>
+  </ion-item>
+
+  <ion-item lines="none" color="clear">
+    <ion-button color="secondary" slot="end" fill="clear">Mot de passe oublié ?</ion-button>
+  </ion-item>
+
+  <ion-button expand="block" color="secondary" shape="round" fill="outline" >Connexion</ion-button>
+  <ion-button expand="block" color="secondary" shape="round">Inscription</ion-button>
+
+  <!-- <app-explore-container name="Tab 1 page"></app-explore-container> -->
 </ion-content>

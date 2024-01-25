@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 3
+      Fiche Client de test
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,9 +9,24 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
+      <ion-title size="large">Page 3</ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+  <ion-card *ngFor="let user of userData">
+    <img alt="Silhouette of mountains" src="https://img.freepik.com/premium-photo/miami-florida-vice-city-synthwave-generative-ai_887552-5957.jpg" />
+    <ion-card-header>
+      <ion-card-title>Fiche utilisateur</ion-card-title>
+      <ion-card-subtitle>Juste pour voir si ca marche</ion-card-subtitle>
+    </ion-card-header>
+  
+    <ion-card-content>
+      <p>Name: {{ user.name }}</p>
+      <p>Email: {{ user.email }}</p>
+      <p>Password: {{ user.password }}</p>
+    </ion-card-content>
+  </ion-card>
+
+
+  <!-- <app-explore-container [name]="userData[0]?.name"></app-explore-container> -->
 </ion-content>
