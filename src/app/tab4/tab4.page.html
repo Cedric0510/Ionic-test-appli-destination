@@ -1,0 +1,27 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>tab4</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">tab4</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-card *ngFor="let destination of destinationData">
+    <img alt="Silhouette of mountains" src="{{destination.photo}}" />
+    <ion-card-header>
+      <ion-card-title>Fiche destination</ion-card-title>
+      <ion-card-subtitle>Juste pour voir si ca marche</ion-card-subtitle>
+    </ion-card-header>
+  
+    <ion-card-content>
+      <p>Name: {{ destination.name }}</p>
+      <p>Description: {{ destination.description }}</p>
+      <p>Geolocalisation: {{ destination.geolocalisation }}</p>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
